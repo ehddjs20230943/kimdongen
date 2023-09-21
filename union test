@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+// 공용체 정의
+union Data {
+    int integer;
+    float floating_point;
+};
+
+int main() {
+    // 공용체 변수 선언 및 초기화
+    union Data myData;
+    
+    // 정수 값 할당
+    myData.integer = 42;
+    
+    // 정수 값 출력
+    printf("정수 값: %d\n", myData.integer);
+    
+    // 부동 소수점 값 할당
+    myData.floating_point = 3.14;
+    
+    // 부동 소수점 값 출력
+    printf("부동 소수점 값: %f\n", myData.floating_point);
+
+    return 0;
+}
