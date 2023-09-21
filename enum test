@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+// 색깔을 나타내는 열거형 정의
+enum Color {
+    RED,
+    GREEN,
+    BLUE,
+    YELLOW,
+    ORANGE
+};
+
+int main() {
+    // 열거형 변수 선언 및 초기화
+    enum Color myColor = BLUE;
+
+    // 열거형 변수 사용
+    switch (myColor) {
+        case RED:
+            printf("선택한 색상은 빨강입니다.\n");
+            break;
+        case GREEN:
+            printf("선택한 색상은 초록입니다.\n");
+            break;
+        case BLUE:
+            printf("선택한 색상은 파랑입니다.\n");
+            break;
+        case YELLOW:
+            printf("선택한 색상은 노랑입니다.\n");
+            break;
+        case ORANGE:
+            printf("선택한 색상은 주황입니다.\n");
+            break;
+        default:
+            printf("올바르지 않은 색상입니다.\n");
+    }
+
+    return 0;
+}
